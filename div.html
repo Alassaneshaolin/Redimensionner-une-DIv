@@ -1,0 +1,40 @@
+<!Doctype html>
+<HTML> 
+<HEAD> 
+    <title>divjs</title>
+
+</HEAD> 
+    <body>
+
+        <span id="box" style="font-size: 10px;" onclick="redimensionner();">Mon prénom est : Alshaolin</span>
+
+        <script type="text/javascript">
+            
+            var box = document.getElementById('box');
+            var compteur = 0;
+            function redimensionner(){
+                if
+                    (compteur == 0) {
+                        box.style.fontSize = '120px';
+                         box.style.color = 'silver';
+                        compteur = 1;
+                    }
+                else{
+                    box.style.fontSize = '30px';
+                    box.style.color = 'green';
+                    compteur = 0;
+                }
+                }
+            
+        </script>
+
+        <div id="divTest" style="background: blue; height:100px; width:100px;"></div>
+        <style type="text/css">
+            #divTest{position: absolute;top: 50%; left: 50%;}
+        </style>
+        
+    </body>
+    
+
+
+</HTML>
