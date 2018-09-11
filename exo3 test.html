@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>exo3</title>
+</head>
+
+
+	<script>
+		function action() {
+		document.getElementById("cadre").style.marginTop="200px";
+		}
+		function reaction() {
+		document.getElementById("cadre").style.marginTop="10px";
+		}
+	
+	</script>
+ 
+<body onkeyup="action()" onkeydown="reaction()">
+<div id="cadre" ></div>
+		
+		<style type="text/css">
+			#cadre{
+				position: relative;
+				background-color:blue;
+				width:100px;height:100px; 
+				top: 150px; left: 600px;
+
+			}
+		</style>
+
+</body>
+</html>

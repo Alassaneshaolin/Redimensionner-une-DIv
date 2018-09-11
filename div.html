@@ -25,12 +25,59 @@
                     compteur = 0;
                 }
                 }
+
+            
+               
+            function change() {
+                var conteneur = document.getElementById('conteneur');
+                conteneur.style.backgroundColor = "green";
+            }
+
+            function hide(){
+                conteneur.style.display = "none";
+            }
+
+            function display(){
+                conteneur.style.display = "";
+            }
+
+            function height(){
+                if (compteur==0) {
+                    conteneur.style.height = "110px";
+                    compteur = 1;
+                }
+                
+                else if (compteur == 1) {
+                    conteneur.style.height = "300px";
+                    compteur = 2;
+                }
+                else{
+                    conteneur.style.height = "100px";
+                    compteur = 0;
+                }
+                
+            }
+
             
         </script>
 
-        <div id="divTest" style="background: blue; height:100px; width:100px;"></div>
+        <div id="conteneur" style="background-color: blue; height:100px; width:100px;" ></div>
+        <button type="button" id="btn1" onclick="height()">Bouton 1</button>
+        <button type="button" id="btn2" onclick="change()">Bouton 2</button>
+        <button type="refresh" id="btn3" onclick="window.location.reload();">Bouton 3</button>
+        <button type="button" id="btn4" onclick="hide()">Bouton 4</button>
+        <button type="button" id="btn5" onclick="display()">Bouton 5</button>
+
+        
+        
         <style type="text/css">
-            #divTest{position: absolute;top: 50%; left: 50%;}
+            #btn1 {
+                
+            }
+            #conteneur{
+                position: absolute;
+                top: 200px; left: 600px;
+            }
         </style>
         
     </body>
